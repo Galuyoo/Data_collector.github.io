@@ -24,7 +24,7 @@
         }  
         else{  
             echo "<h1> Login failed. Invalid username or password.</h1>";  
-            header("Location: index.php");
+            header("Location: index.html");
             exit(); 
 
         }     
