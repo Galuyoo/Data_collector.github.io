@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('123.jpeg');
+    font-family: montserrat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 80px;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    max-width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 952px) {
+    .checkbtn {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: 90vh;
+      background: #333;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+      opacity: 0;
+      z-index: 1;
+    }
+  
+    ul li {
+      margin: 20px 0;
+      display: block;
+    }
+  
+    #check:checked ~ ul {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 86vh;
+    color: #fff;
+  }
+  
+  button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    width: 100%;
+  }
+  
+  button:hover {
+    border: none;
+  }
+  

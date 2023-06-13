@@ -19,11 +19,11 @@
                 <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" id="user" name="user" required />
+                        <input type="text" placeholder="Username" id="user" name="user" required/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" id="pass" name="pass" autocomplete="current-password" required />
+                        <input type="password" placeholder="Password" id="pass" name="pass" autocomplete="current-password" required/>
                     </div>
                 <input type="submit" value="Login" class="btn solid" id="btn" />
                 <p class="social-text">Or Check our social platforms</p>
