@@ -29,7 +29,7 @@
     <div class="content">
         <h1>DATA STREAMING</h1>
         <p>This website connects with Raspberry Pi</p>
-            <a href="index.php">
+            <a href="index.html">
                 <button type="button"><span></span>Logout</button>
             </a>
 
