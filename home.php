@@ -1,39 +1,25 @@
+<?php
+
+
+
+?>
+
 <!DOCTYPE html>
-<html lang="">
-<head>
-    <meta charset="utf-8">
-    <title>
-        Raspberry Database Website
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="./css/home.css">
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+        src="https://kit.fontawesome.com/64d58efce2.js"
+        crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Welcome to the Home Page!XD</h1>
 
-<body>
+        <p><a href="./php/logout.php">WANA LOGOUT?</a></p>
 
-    <nav>
-      <a href="./home.php"><img src="./static/agamine_logo.png" class="logo"></a>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
-      </label>
-      <ul>
-        <li><a  href="./base.php">Sections</a></li>
-        <li><a  href="./alarms.php">Events</a></li>
-        <li><a  href="./wayni.php">Data base</a></li>
-        <li><a  href="./te.php">Time filter</a></li>
-      </ul>
-    </nav>
-    
-    <div class="content">
-        <h1>DATA STREAMING</h1>
-        <p>This website connects with Raspberry Pi</p>
-            <a href="index.html">
-                <button type="button"><span></span>Logout</button>
-            </a>
-
-    </div>
-   
-</body>
+    </body>
 </html>
